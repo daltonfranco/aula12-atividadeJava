@@ -9,7 +9,7 @@ public class Pessoa {
     }
 
     public String getNome(){
-     return this.nome;
+        return this.nome;
     }
 
     public void setEndereco(String endereco){
@@ -36,10 +36,9 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public Pessoa(String telefone, String endereco){
+    public Pessoa(String nome, String telefone){
+        this.nome = nome;
         this.telefone = telefone;
-        this.endereco = endereco;
     }
-
 
 }

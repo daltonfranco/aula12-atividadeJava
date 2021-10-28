@@ -1,14 +1,14 @@
 public class Empregado extends Pessoa {
     
-    private int codigoSetor;
-    protected double salarioBase;
-    protected double imposto;
+    private String codigoSetor;
+    private double salarioBase;
+    private double imposto;
 
-    public void setCodigoSetor(int codigoSetor){
+    public void setCodigoSetor(String codigoSetor){
         this.codigoSetor = codigoSetor;
     }
 
-    public int getCodigoSetor(){
+    public String getCodigoSetor(){
         return this.codigoSetor;
     }
 
@@ -28,8 +28,11 @@ public class Empregado extends Pessoa {
         return this.imposto;
     }
 
-    public double calcularSalario(){
-        return this.salarioBase + this.imposto;
+    
+    public double calculaSalario(){
+        double salarioTotal = 0;
+        salarioTotal = this.salarioBase - this.imposto;
+        return salarioTotal;
     }
 
 }

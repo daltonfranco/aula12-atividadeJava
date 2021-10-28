@@ -2,18 +2,12 @@ public class Adimistrador extends Empregado {
     
     private double ajudaDeCustos;
 
-    public void setAjudaDeCustos(double ajudaDeCustos){
-        this.ajudaDeCustos = ajudaDeCustos;
+    //get set
+
+
+    @Override
+    public double calculaSalario(){
+        return super.calculaSalario() + this.ajudaDeCustos;
     }
-
-
-    public double getAjudaDeCustos(){
-        return this.ajudaDeCustos;
-    }
-
-    public double calcularSalario(){
-        return this.salarioBase + this.imposto + this.ajudaDeCustos; 
-    }
-
 
 }
