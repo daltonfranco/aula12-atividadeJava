@@ -20,7 +20,7 @@ public class Pessoa {
         return this.endereco;
     }
 
-    public void setTelefone(){
+    public void setTelefone(String telefone){
         this.telefone = telefone;
     }
 
